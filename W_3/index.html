@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Molten Lava Cake Recipe</title>
+	<meta name="description" content="Sample Recipe Website for Web Development Spring'17">
+    <meta name="keywords" content="HTML, Recipe, Food, Web">
+    <meta name="author" content="Valeria Pinto">
+</head>
+<body>
+<style type="text/css">
+
+	html{
+	background: url(images/background5.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	}
+
+	ul#menu li {
+    	display:inline;
+		}
+
+		*{
+			margin:0;
+			padding:0;
+		}
+
+}
+
+		header,
+    	footer {
+        width: 100%;
+		}
+
+		
+
+		body{ 
+			font-family: "Arquitecta" , Helvetica, sans-serif;
+			color: #000000;
+		}
+
+		div{
+			background-color: rgba(0,0,0,0);
+		}
+
+		a{ 
+			text-decoration: none;
+		}
+
+		a:hover {
+   			text-decoration:underline;
+		}
+		
+		p{
+			text-align: justify;
+			max-width: 60%;
+			font-size: 18px;
+    		line-height: 28px;
+    		padding-top: 10px 0;
+		}
+
+	main ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: white;
+	}
+
+	main a{
+		display: inline block;
+		text-align: center;
+		width: 100px;
+		padding: 10px;
+		color: black;
+		text-decoration:none;
+	}
+	main li a:hover{
+		background-color: #111;
+		color: white;
+	}
+
+	a{
+		text-decoration: none;
+		color: black;
+	}
+
+		
+		.container{
+			width: 1100px;
+			margin: 0 auto;
+			padding: 10px;
+		}
+		
+		.thumbnail{
+			width: 300px;
+			height: 40px ;
+			float: left;
+
+		}
+
+		.clear{
+			clear:both;
+		}
+
+		.clear-fix::after{
+			content: ' ';
+			display: block;
+			clear: both;
+			height: 0;
+			font-size: 0;
+			visibility: hidden;
+			text-align:center;
+			position: relative;
+
+		}
+
+		.container-fluid{
+			width: 90%;
+			padding: 2%;
+			margin: 0 auto;
+
+		}
+		.thumbnail-fluid{
+			max-width: 300px;
+			height: 114px;
+			margin: 2%;
+			display: inline-block;
+			text-align: left;
+			position: right;
+			white-space:nowrap;
+			font-size: 18px;
+		}
+		.timeingredients{
+			color: black;
+    		position: relative;
+    		top: 0px;
+    		left: 30px;
+    		max-width: 80%
+		}
+
+		.thumbnail-border{
+			width: 300px;
+			height: 300px;
+			float: left;
+			margin: 5px;
+			width: 270px;
+			padding: 10px;
+			border-width:5px;
+			border-style: solid;
+			border-color: #0000FF;
+			overflow: hidden;
+		}
+		
+		   p.pos-rel{
+    		color: black;
+    		position: relative;
+    		top: 0px;
+    		left: 0px;
+    		max-width: 50%
+
+   		}
+	main li a.active{
+		background-color: #888
+	}
+</style>
+<div class="container">
+<header>
+<img src="images/foodnetwork.png" alt="Food Network Logo" title="logo" style="width: 10%">
+</header>
+<br>
+	<main>
+	<nav style="text-align: left">
+		<h1><h1>
+		<ul id="menu">
+			<li><a href="#">Shows</a></li>
+			<li><a href="#">Chefs</a></li>
+			<li><a href="#">Recipes</a></li>
+			<li><a href="#">Restaurants</a></li>
+			<li><a href="#">Videos</a></li>
+		</ul>
+	</nav>
+	</main>
+</div>
+<div class="container">
+	<hr style="width:100%;height: 2px;color: #333;background-color: #333"/>
+</div>
+<div class="container clear-fix">
+	<div class="thumbnail-fluid"><img src="images/beercake.png" style="max-width: 50%" align="left">
+	<br>
+	<a href="#"><strong>Chocolate Beer Cake</strong></a>
+	<p style="color: grey"> Easy to make and delicious!</p>
+	</div>
+	<div class="thumbnail-fluid"><img src="images/gameday3.png" style="width: 50%" align="left">
+	<br>
+	<a href="#"><strong>7 Game-Day Snacks</strong></a>
+	<p style="color: grey"> Get them now!</p>
+	</div>
+	<div class="thumbnail-fluid"><img src="images/brownsugarbacon.png" style="width: 50%" align="left">
+	<br>
+	<a href="#"><strong>Brown Suger Bacon</strong></a>
+	<p style="color: grey"> Best cheat day treat.</p>
+	</div>
+	<br class="clear">
+</div>
+<div class="container">
+	<hr style="width:100%;height: 2px;color: #333;background-color: #333"/>
+</div>
+
+<div class="container clear-fix">
+	<h2>Molten Lava Cakes</h2>
+	<br>
+	<figure>
+	<img src="images/moltenlavacake.png" style="width: 40%" align="left" style="padding: 3px">
+	</figure>
+	<div class="timeingredients">
+	<h3> Total Time: 50 min </h3>
+	<br>
+		<ul>
+			<li>Prep: 35 min</li>
+			<li>Cook: 15 min</li>
+			<li>Yield: 8 cakes</li>
+			<li>Level: Easy</li>
+		</ul>
+		</div>
+		<br>
+	<div class="timeingredients">
+	<h3> Ingredients: </h3>
+	<br>
+		<ul>
+			<li> 2 sticks unsalted butter, plus more for the ramekins</li>
+			<li> 4 teaspoons granulated sugar</li>
+			<li> 1/2 teaspoon ground cinnamon</li>
+			<li> Pinch of cayenne pepper</li>
+			<li> Pinch of nutmeg</li>
+			<li> 12 ounces semisweet chocolate, chopped</li>
+			<li> 2 1/2 cups confectioners' sugar, plus more for dusting (optional)</li>
+			<li> 6 large eggs plus 6 egg yolks</li>
+			<li> 1 1/2 teaspoons vanilla extract</li>
+			<li> 1/4 teaspoon almond extract</li>
+		</ul></div>
+
+	<div>
+	<br>
+	<br>
+	<br>
+	<h3> Directions: </h3>
+	<br>
+		<p class="pos-rel">Preheat the oven to 400 degrees F. Butter eight 6-ounce ramekins and sprinkle each with 1/2 teaspoon granulated sugar. Combine the butter, cinnamon, cayenne, nutmeg and chocolate in a saucepan over low heat, stirring frequently until melted and smooth. Cool slightly. Whisk the flour, confectioners' sugar, eggs and yolks, vanilla extract and almond extract in a bowl until creamy. Whisk in the melted chocolate mixture. Divide among the prepared ramekins. Bake the cakes until the tops are stiff and the edges darken, 12 to 14 minutes. Remove from the oven and let cool 5 minutes. Loosen the edges of the cakes with a small paring knife and transfer to plates while warm. Dust with confectioners' sugar. </p>
+		<br>
+		<p class="pos-rel"> Photograph by Gentl & Hyers. </p>
+		<br>
+		<p class="pos-rel"> Recipe courtesy of The Neelys' for Food Network Magazine</p>
+		</div>
+		<div class="thumbnail-fluid"></div>
+		<div class="thumbnail-fluid"></div>
+		<div class="thumbnail-fluid"></div>
+</div>
+<aside> 
+	<nav>
+		<ul>
+			<li><a href="#">Chocolate Chip Cookies</a></li>
+			<li><a href="#">Bext Vegan Burger</a></li>
+			<li><a href="#">5 Homemade Marinara Sauces</a></li>
+			<li><a href="#">How-To Video: Lemon Pie</a></li>
+		</ul>
+	</nav>
+</aside>
+<main>
+<footer>
+&copy; Food Network Recipes VPM 2017
+</footer>
+</body>
+</html>
