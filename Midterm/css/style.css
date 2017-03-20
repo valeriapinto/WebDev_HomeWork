@@ -1,0 +1,387 @@
+Responsive 996px grid system ~ Style CSS. Copyright 2013,
+Josh Cope */
+<style>
+
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+html {
+    background: url(images/background5.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+}
+header {
+    display: inline-block;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+header,
+footer {
+    width: 100%;
+}
+
+footer {
+    padding-left: 30px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+body {
+	font-family: 'Josefin Sans', sans-serif;
+    color: #000000;
+}
+div {
+    background-color: rgba(0, 0, 0, 0);
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+nav{
+	float:right;
+	padding-right: 15px;
+	padding-top: 15px;
+}
+header img{
+	max-width: 30%;
+	max-height:90px;
+	margin-left:40px;
+	margin-top: 15px;
+	padding-top: 5px;
+    margin-bottom: 15px;
+    padding-bottom: 3px;
+
+
+}
+
+h1{
+    text-align: center;
+    font-size: 3em;
+}
+
+h1.about {
+    text-align: center;
+    font-size: 1.8em;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5em;
+    color: white;
+}
+
+h3.about {
+    text-align: center;
+    font-size: 1 em;
+    color: black;
+}
+
+h3.backto {
+    text-align: center;
+}
+
+a.about {
+    text-align: center;
+    font-size: 2 em;
+    color: black;
+}
+
+h3 {
+    padding-left: 9.5%;
+    padding-right: 9.5%;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+footer a{
+    color: black;
+}
+
+.thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 25%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.thumb:hover .mask {
+    opacity: 1;
+}
+
+.thumb .mask h2
+.thumb .mask a {
+
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0s ease-in-out;
+    color: white;
+    text-orientation: center;
+    text-decoration: none;
+}
+
+.thumb:hover .mask h2
+.thumb:hover .mask a {
+    opacity: 1;
+    transform: scale(1);
+    text-decoration: none;
+
+}
+
+.thumb img {
+    transform: scale(1);
+    transform: rotate(0deg);
+    transition: all 0.5s ease;
+}
+
+.thumb:hover img {
+    transform: scale(1.2);
+}
+
+img.grid_4{
+	margin: 0px;
+}
+ul#menu li {
+    display: inline-block;
+    width: 130px;
+    text-align: center;
+
+}
+
+/*responsive nav bar*/
+nav ul {
+    list-style-type: none;
+    position: relative;
+    margin:0;
+    line-height: 80px;
+}
+
+/* stack the li to the left with float and a fixed width  */
+
+/* change navbar item colo on hover */
+nav ul li:hover {
+    color: grey;
+}
+
+/* make the a tags display like block elements to take up full space of container li*/
+nav ul a {
+    display: block;
+    color: #222;
+    text-decoration: none;
+    line-height: 30px;
+    padding: 15px;
+    font-size:20px;
+}
+
+nav ul a:hover {
+	/*hover over nav links styles here*/
+}
+
+/* hide sublists be default */
+nav ul ul {
+    display: none;
+    /* change bg so we can see what we are affecting*/
+    
+    background: #ddd;
+}
+
+/* give "dropdown" a sepcific width */
+nav ul ul li {
+    /* float: none; */
+    
+    background-color: grey;
+    /*width: 500px;*/
+}
+
+/* align in drop down text left vs center for main navbar */
+nav ul ul a {
+    padding: 15px;
+    text-align: left;
+}
+
+/* Selects all <ul> elements where the its parent is an unordered list, with a moused over list item */
+nav ul li:hover > ul {
+    /* only show child lists when the parent li is hovered over, OR when child ul is hovered over */
+    
+    display: block;
+    /* change color to see what we are looking at */
+    
+    background-color: #ccc;
+}
+
+/* change in internal ul background color for hover */
+nav ul li:hover > ul li:hover {
+    background: #999
+}
+/*.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+}*/
+
+*{
+	box-sizing: border-box;
+}
+
+.wrapper{
+	width:96%;
+	margin:2%;
+	margin-bottom: 0.5%;
+	margin-top: 1%;
+
+}
+
+.col_3{
+	display: inline-block;
+	width:32%;
+	margin-left: 0.5%;
+	margin-right:0.5%;
+	margin-bottom: 0%;
+	margin-top: 0%;
+}
+
+.col_2{
+	display: inline-block;
+	width:48.6%;
+	margin-left: 0.5%;
+	margin-right:0.5%;
+	margin-bottom: 0%;
+	margin-top: 0%;
+}
+
+.col_2_about{
+    display: inline-block;
+    width:30.6%;
+    margin-left: 2%;
+    margin-right:0%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+.col_2_square{
+    display: inline-block;
+    width:30.6%;
+    margin-left: 2%;
+    margin-right:0%;
+    margin-bottom: 2%;
+    margin-top: 0%;
+}
+
+.col_2_video{
+    display: inline-block;
+    width:40%;
+    margin-left: 5%;
+    margin-right: 2.5%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+.col_2_photo{
+    display: inline-block;
+    width:48.6%;
+    margin-left: 0.5%;
+    margin-right:0.5%;
+    margin-bottom: 1%;
+    margin-top: 0%;
+}
+.col_4_gif{
+    display: inline-block;
+    width: 23.7%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+.col_1{
+	display: inline-block;
+	width:98.5%;
+	margin-left: 0.5%;
+	margin-right:0.5%;
+	margin-bottom: 0%;
+	margin-top: 0%;
+}
+
+.col_1_video{
+    display: inline-block;
+    width:80%;
+    margin-left: 9.5%;
+    margin-right:0.5%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    align-content: center;
+}
+
+@media only screen and (max-width: 767px) {
+	.wrapper, .col_3{
+		display:block;
+		width:100%;
+	}
+}
+/* =============================================================================
+   Page Styles
+   ========================================================================== */
+
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+/* Tablet Portrait size to Base 996px */
+@media only screen and (min-width: 768px) and (max-width: 995px) {}
+
+/* All Mobile Sizes */
+@media only screen and (max-width: 767px) {}
+
+/* Mobile Landscape Size to Tablet Portrait */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+/* Mobile Portrait Size to Mobile Landscape Size */
+@media only screen and (max-width: 479px) {}
+
+</style>
+/* =============================================================================
+   Font-Face
+   ========================================================================== */
+
+/* This is the proper syntax for an @font-face file
+
+/* @font-face {
+font-family: 'FontName';
+src: url('../fonts/FontName.eot');
+src: url('../fonts/FontName.eot?iefix') format('embedded-opentype'),
+url('../fonts/FontName.woff') format('woff'),
+url('../fonts/FontName.ttf') format('truetype'),
+url('../fonts/FontName.svg#FontName') format('svg');
+font-weight: normal;
+font-style: normal; }
